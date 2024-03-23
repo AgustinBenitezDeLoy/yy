@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Usuario</title>
+</head>
+<body>
+    <form action="gestion_usuarios.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        
+        <label for="rol">Rol:</label>
+        <select id="rol" name="rol" required>
+            <option value="usuario">Usuario</option>
+            <option value="administrador">Administrador</option>
+        </select>
+        
+        <button type="submit">Agregar Usuario</button>
+    </form>
+</body>
+</html>
+    

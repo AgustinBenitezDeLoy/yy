@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro</h1>
+        <form id="registro-form" method="POST" action="registro.php">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="apellido" placeholder="Apellido" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <input type="text" name="cedula" placeholder="Cédula" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <hr>
+        <h1>Iniciar Sesión</h1>
+        <form id="inicio-sesion-form" method="POST" action="login.php">
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <script src="registro.php"></script>
+    <script src="login.php"></script>
+</body>
+</html>
